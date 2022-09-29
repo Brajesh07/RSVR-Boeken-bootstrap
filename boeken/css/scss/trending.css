@@ -1,0 +1,181 @@
+.trending-product {
+  margin: 5rem 0;
+  position: relative;
+}
+.trending-product .top-button {
+  background-color: #2F2B23;
+  color: #FFF !important;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 20px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.trending-product .trending-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin: 2rem 0;
+  font-family: open sans-serif;
+}
+.trending-product .trending-title span {
+  color: #949D8C;
+}
+.trending-product .trending-title h1 {
+  color: #000;
+}
+.trending-product .all-products .flickity-viewport {
+  height: clamp(300px, 26vw, 500px) !important;
+}
+.trending-product .all-products .product {
+  width: clamp(200px, 20vw, 380px);
+  height: clamp(250px, 20vw, 400px);
+  margin: 0 50px;
+}
+.trending-product .all-products .product .product-img {
+  position: relative;
+}
+.trending-product .all-products .product .product-img img {
+  width: clamp(200px, 20vw, 380px);
+  height: clamp(200px, 20vw, 380px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  transition: ease 500ms;
+}
+.trending-product .all-products .product .product-img .product-name {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #F4F5F6;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 25px;
+  transition: ease 500ms;
+}
+.trending-product .all-products .product .product-detail {
+  transition: ease 500ms;
+}
+.trending-product .all-products .product .product-detail h2 {
+  font: normal normal normal 26px/30px Asap;
+  color: #2F2B23;
+}
+.trending-product .all-products .product .product-detail p {
+  font: normal normal bold 26px/30px Asap;
+  color: #949D8C;
+}
+.trending-product .all-products .product .add-cart {
+  display: none;
+}
+.trending-product .all-products .product:hover img {
+  opacity: 0.4;
+}
+.trending-product .all-products .product:hover .product-detail {
+  display: none;
+}
+.trending-product .all-products .product:hover .add-cart {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+.trending-product .all-products .product:hover .add-cart a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  font: normal normal normal 21px/24px Asap;
+  border-radius: 25px;
+  font-size: 18px;
+}
+.trending-product .all-products .product:hover .add-cart .add {
+  background-color: #363240;
+}
+.trending-product .all-products .product:hover .add-cart .buy {
+  background-color: #949D8C;
+}
+.trending-product .all-products .product:hover .product-name {
+  background-color: transparent;
+}
+
+.trending-product-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 786px) {
+  .trending-product {
+    display: none;
+    flex-direction: column;
+  }
+  .trending-product-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trending-product-mobile .trending-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 2rem 0;
+    font-family: open sans-serif;
+  }
+  .trending-product-mobile .trending-title span {
+    color: #949D8C;
+  }
+  .trending-product-mobile .trending-title h1 {
+    color: #000;
+  }
+  .trending-product-mobile .all-products {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .trending-product-mobile .all-products .product-img {
+    position: relative;
+  }
+  .trending-product-mobile .all-products .product-img img {
+    width: clamp(100px, 40vw, 300px);
+    height: clamp(100px, 40vw, 380px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px;
+    transition: ease 500ms;
+  }
+  .trending-product-mobile .all-products .product-img .product-name {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #F4F5F6;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 25px;
+    transition: ease 500ms;
+  }
+  .trending-product-mobile .all-products .product-detail {
+    transition: ease 500ms;
+  }
+  .trending-product-mobile .all-products .product-detail h2 {
+    font-size: 16px;
+    font-family: Asap;
+    color: #2F2B23;
+  }
+  .trending-product-mobile .all-products .product-detail p {
+    font-size: 16px;
+    font-family: Asap;
+    color: #949D8C;
+  }
+  .trending-product-mobile a {
+    background-color: #2F2B23;
+    color: #FFF !important;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 20px;
+  }
+}/*# sourceMappingURL=trending.css.map */

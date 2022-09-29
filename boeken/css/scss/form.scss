@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: open sans-serif;
+
+    h3 {
+        width: clamp(300px, 46vw, 875px);
+    }
+
+    form {
+
+        .bttn {
+            background-color: #363240;
+            border-radius: 25px;
+            padding: 10px 15px;
+            color: #FFF;
+            margin: 20px 0;
+        }
+
+        .field {
+            padding: 20px 0px;
+            width: (100px, 32vw, 600px);
+            position: relative;
+
+
+            input {
+                border: none;
+                outline: none;
+            }
+
+            &::before {
+                content: '';
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                height: 1px;
+                position: absolute;
+            }
+        }
+    }
+
+
+
+}

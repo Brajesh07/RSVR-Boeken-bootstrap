@@ -1,0 +1,53 @@
+.banner {
+  margin: 25px 0;
+  position: relative;
+  width: 100%;
+  height: clamp(380px, 24vw, 459px);
+  overflow: hidden;
+}
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: clamp(380px, 24vw, 459px);
+}
+.banner::before {
+  content: "";
+  width: 100vw;
+  height: clamp(380px, 24vw, 459px);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), 50%, rgba(255, 255, 255, 0.9) 55%, rgb(255, 255, 255) 75%);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.banner .banner-text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+  width: clamp(300px, 24vw, 450px);
+}
+.banner .banner-text h1 {
+  font-size: clamp(18px, 3vw, 45px);
+  font-family: Open sans-serif;
+  margin-bottom: 25px;
+}
+.banner .banner-text h1 span {
+  font-weight: bold;
+}
+.banner .banner-text p {
+  margin-bottom: 25px;
+  font-family: Asap;
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner .banner-text button {
+  background-color: #949D8C;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+}/*# sourceMappingURL=banner.css.map */

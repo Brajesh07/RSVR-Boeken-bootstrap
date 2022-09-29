@@ -1,0 +1,44 @@
+footer {
+  padding: 30px 0;
+  border-top: 1px solid #C7C7C7;
+}
+footer a {
+  display: block;
+  color: #2F2B23;
+  font-size: 18px;
+}
+footer h3 {
+  font-size: 25px;
+  font-family: open sans-serif;
+  color: #949D8C;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 20px;
+  color: #000;
+}
+footer .footer span {
+  color: #949D8C;
+  font-weight: bold;
+  font-family: Asap;
+}
+footer .footer i {
+  padding: 10px 15px;
+  font-size: 26px;
+  color: #949D8C;
+}
+
+@media only screen and (max-width: 786px) {
+  footer .footer {
+    flex-direction: column;
+  }
+  footer .footer p {
+    font-size: 14px;
+  }
+  footer .footer i {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=footer.css.map */

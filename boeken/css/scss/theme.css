@@ -1,0 +1,52 @@
+.theme {
+  width: 100%;
+  height: clamp(511px, 97vw, 745px);
+  position: relative;
+}
+.theme img {
+  width: 100%;
+  height: clamp(511px, 97vw, 745px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.theme .center,
+.theme .part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.theme .part {
+  width: clamp(180px, 78vw, 599px);
+  height: auto;
+}
+.theme .center {
+  z-index: 1;
+  text-align: center;
+}
+.theme .center .icon {
+  width: clamp(70px, 13vw, 95px);
+  height: clamp(70px, 13vw, 95px);
+  padding: clamp(10px, 6vw, 20px) clamp(5px, 3vw, 10px);
+  border-radius: 50%;
+  background-color: #E4E1D9;
+  font-size: clamp(12px, 3vw, 18px);
+  margin: 0 auto;
+}
+.theme .center h3,
+.theme .center p {
+  color: #FFF;
+  font-size: clamp(12px, 3vw, 20px);
+}
+.theme .center h3 {
+  margin: 10px 0;
+  font-family: open sans-serif;
+  font-size: clamp(15px, 5vw, 35px);
+}
+.theme .center a {
+  background-color: #949D8C;
+  border-radius: 25px;
+  padding: clamp(5px, 2vw, 15px) clamp(5px, 3vw, 20px);
+  color: #FFF;
+  font-size: 16px;
+}/*# sourceMappingURL=theme.css.map */

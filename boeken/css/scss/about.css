@@ -1,0 +1,48 @@
+.about img {
+  margin-top: 50px;
+  width: 100%;
+}
+.about .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.about h2,
+.about p {
+  color: #000;
+  font-family: Asap;
+  font-size: 21px;
+  width: clamp(300px, 36vw, 700px);
+}
+.about h2 {
+  font-family: open sans-serif;
+  font-size: 35px;
+}
+.about a {
+  background-color: #2F2B23;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 786px) {
+  .about h2,
+.about p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 25px;
+  }
+  .about a {
+    text-align: center;
+    display: inline;
+  }
+  .about .col-sm-12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=about.css.map */

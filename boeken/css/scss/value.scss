@@ -1,0 +1,118 @@
+.shop {
+    background-color: #E4E1D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+
+        h2,
+        p {
+            text-align: center;
+        }
+    }
+
+    .shop-icon {
+        width: clamp(300px, 73vw, 1400px);
+
+        .flickity-prev-next-button.previous {
+            left: -50px;
+        }
+
+        .flickity-prev-next-button.next {
+            right: -50px;
+        }
+
+        .flickity-button {
+            background-color: transparent;
+        }
+
+        .flickity-page-dots {
+            display: none;
+        }
+
+        .icon-img {
+            padding: 0 25px;
+            width: 150px;
+            height: 150px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.shop-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 786px) {
+    .shop {
+        display: none;
+
+        .shop-icon {
+
+            .flickity-prev-next-button.previous {
+                left: -20px;
+            }
+
+            .flickity-prev-next-button.next {
+                right: -20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:786px) {
+    .shop-mobile {
+        background-color: #E4E1D9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+
+        .container {
+
+            h2,
+            p {
+                text-align: center;
+            }
+        }
+
+        .shop-icon {
+            width: clamp(300px, 73vw, 1400px);
+            display: flex;
+            justify-content: center;
+
+            .flickity-prev-next-button.previous {
+                left: -50px;
+            }
+
+            .flickity-prev-next-button.next {
+                right: -50px;
+            }
+
+            .flickity-button {
+                background-color: transparent;
+            }
+
+            .flickity-page-dots {
+                display: none;
+            }
+
+            .icon-img {
+                padding: 0 10px;
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-family: open sans-serif;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

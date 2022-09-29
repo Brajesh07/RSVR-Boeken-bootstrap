@@ -1,0 +1,30 @@
+.gram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gram img {
+  padding: 2px;
+  width: 100%;
+}
+
+.gram-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 786px) {
+  .gram {
+    display: none;
+  }
+  .gram-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gram-mobile .gram-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=gram.css.map */
